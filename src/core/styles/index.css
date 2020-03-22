@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* ------------------------------------------------------------------- Galano classic */
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic ExLight';
+  src: url('~/fonts/Galano Classic/GalanoClassic-ExtraLightItalic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-HeavyItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-SemiBoldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Galano Classic';
+  src: url('~/fonts/Galano Classic/GalanoClassic-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+/* ------------------------------------------------------------- SOFIA PRO */
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProUltraLight-Italic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProLight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Semi';
+  src: url('~/fonts/Sofia Pro/SofiaProSemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProRegular-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProExtraLight-Italic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProBlack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProBold-Italic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Semi';
+  src: url('~/fonts/Sofia Pro/SofiaProSemiBold-Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProBlack-Italic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProLight-Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProMedium-Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('~/fonts/Sofia Pro/SofiaProUltraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* icons from icomoon */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('~/fonts/icomoon.eot?uw1t1j');
+  src:  url('~/fonts/icomoon.eot?uw1t1j#iefix') format('embedded-opentype'),
+    url('~/fonts/icomoon.ttf?uw1t1j') format('truetype'),
+    url('~/fonts/icomoon.woff?uw1t1j') format('woff'),
+    url('~/fonts/icomoon.svg?uw1t1j#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e902";
+  color: inherit;
+}
+
+.icon-cancel:before {
+  content: "\e901";
+  color: inherit;
+}
+.icon-checkmark:before {
+  content: "\e900";
+  color: inherit;
+}
+
+/* csslint ignore:end */

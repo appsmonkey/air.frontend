@@ -1,0 +1,38 @@
+[
+  {
+    "title": "1. Events",
+    "list": [
+      "Open smart city conferences",
+      "Zero-to-hero workshops on latest technology",
+      "Hackathons to develop city-specific solutions",
+      "Fostering local community knowledge"
+    ]
+  },
+  {
+    "title": "2. Open Code",
+    "list": [
+      "Open source frameworks and libraries",
+      "Mobile apps templates",
+      "Graphs, maps, web admin templates",
+      "Open drivers for devices"
+    ]
+  },
+  {
+    "title": "3. Open Data",
+    "list": [
+      "Open developer APIs",
+      "Embracing de-facto standards",
+      "Data connectors and importers",
+      "Open data exchange"
+    ]
+  },
+  {
+    "title": "4. Support",
+    "list": [
+      "Detailed documentation",
+      "Public tutorials and forums",
+      "Smart city community network",
+      "Community lists of best technologies"
+    ]
+  }
+]

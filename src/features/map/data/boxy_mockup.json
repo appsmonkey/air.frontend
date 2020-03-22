@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Dzavid's Device",
+    "coordinates": {
+      "lat": 43.90028970143158,
+      "lng": 18.32698435872203
+    },
+    "temperature": 7.3,
+    "humidity": 79.6
+  },
+  {
+    "name": "Nedim's Device",
+    "coordinates": {
+      "lat": 43.894661,
+      "lng": 18.37132900000006
+    },
+    "temperature": 13.2,
+    "humidity": 40.9
+  }
+]
