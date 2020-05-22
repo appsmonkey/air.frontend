@@ -27,7 +27,7 @@ CityOS web app
 
 * Web standard: HTML 5 
 
-* Styling framework: styled components 
+* Styling framework: Styled components 
 
 * Packet manager: Yarn 
 
