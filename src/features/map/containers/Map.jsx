@@ -824,7 +824,7 @@ class Map extends React.Component {
         </Tooltip>
         <UIMask slideIn={info || cityReadings}>
           <Info onMouseEnter={this.handleOverlayMouseEnter} onMouseLeave={this.handleOverlayMouseLeave}>
-            <ExternalLink target="__blank" href="https://cityos.io/air">
+            <ExternalLink href="https://cityos.io/air">
               <img src={LogoImage} alt="cityos logo" width={260} />
             </ExternalLink>
             {info || cityReadings ? <Measurements showBackArrow={!isEmpty(info)} handleBackClick={()=>this.setState({info: null})} info={info || cityReadings} /> : <p>Please select boxy</p>}
