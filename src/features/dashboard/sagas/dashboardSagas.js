@@ -191,7 +191,7 @@ function* deleteDevice(action) {
 
     yield call(deleteDeviceApi, action.payload.token);
     yield put({ type: DELETE_DEVICE_SUCCESS, payload });
-    history.goBack();
+    history.push("/dashboard/devices");
     showNotification(`${action.payload.name} was deleted successfully`);
   } catch (error) {
     yield put({ type: DELETE_DEVICE_FAILURE, error });

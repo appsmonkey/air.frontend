@@ -136,7 +136,7 @@ class CandleStickChartWithHoverTooltip extends React.Component {
     const {filters} = this.props;
 
     return filters.map(filter => {
-      if(!LEFT_CHART_SENSORS.some(key => filter.value === key) && filter.value !== READINGS.pm25){
+      if(!LEFT_CHART_SENSORS.some(key => filter.value === key)){
         return (
           <>
             <LineSeries interpolation={curveCardinal} yAccessor={d => this.formatSensorValue(d[filter.value], filter.value)} stroke={SENSOR_COLORS[filter.value]} />
