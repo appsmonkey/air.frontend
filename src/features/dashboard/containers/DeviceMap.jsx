@@ -18,7 +18,6 @@ import "../styles/custom-geocoder.css";
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 const GOOGLE_MAPS_KEY = process.env.REACT_APP_GOOGLE_MAPS_KEY;
 
-console.log(GOOGLE_MAPS_KEY);
 Geocode.setApiKey(GOOGLE_MAPS_KEY);
 
 const Wrapper = styled.div`

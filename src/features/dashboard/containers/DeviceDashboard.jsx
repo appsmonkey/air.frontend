@@ -277,6 +277,7 @@ class DeviceDashboard extends React.Component {
     if(this.isAdmin() && !id){
       history.push('/admin');
     }
+    this.redirectUser();
 
     let searchQuery = null;
     if(location.search && location.search !== "") {
@@ -307,13 +308,41 @@ class DeviceDashboard extends React.Component {
   };
 
   componentDidUpdate(prevProps){
+    const {my_devices} = this.props;
+    if(!isEmpty(my_devices) && my_devices !== prevProps.my_devices){
+      this.redirectUser();
+    }
+  }
+
+  
+  componentWillUnmount(){
+    if(this.deviceInterval) clearInterval(this.deviceInterval);
+    if(this.chartInterval) clearInterval(this.chartInterval);
+  }
+  
+  redirectUser = () => {
     const { timeFilter } = this.state;
-    const { match, my_devices, history, getDevice, getInitialDashboardChartData } = this.props;
+    const { match, location, my_devices, history, getDevice, getInitialDashboardChartData } = this.props;
     const id = match.params.id;
 
-    if(id) return;
-    if(!isEmpty(my_devices) && my_devices !== prevProps.my_devices){
-      const filtered_devices = my_devices.filter(el=>el.mine && !el.default_device);
+    const filtered_devices = my_devices.filter(el=>el.mine && !el.default_device);
+    if(id && this.isLoggedIn()){
+      const deviceIndex = filtered_devices.findIndex(device => device.device_id === id);
+      const isMyDevice = (deviceIndex > -1);
+      if( isMyDevice && match.path !== '/dashboard/devices/:id'){
+        console.log("YESS! REDIRECT TO MY DEVICES")
+        if(this.isAdmin()){
+          history.push(`/dashboard/devices/${id + (location.search || '') + (location.hash || '')}`);
+        }
+      }else if(!isMyDevice){
+        if(this.isAdmin() && match.path !== '/admin/dashboard/devices/:id'){
+          history.push(`/admin/dashboard/devices/${id + (location.search || '') + (location.hash || '')}`);
+        }else if(!this.isAdmin() && match.path !== '/air/dashboard/devices/:id'){
+          history.push(`/air/dashboard/devices/${id + (location.search || '') + (location.hash || '')}`);
+        }
+      }
+    }
+    else{
       if(filtered_devices[0] && filtered_devices[0].device_id){
         if(filtered_devices.length > 3 && !this.isAdmin()){
           history.push('/dashboard');
@@ -336,12 +365,6 @@ class DeviceDashboard extends React.Component {
       }
     }
   }
-
-  componentWillUnmount(){
-    if(this.deviceInterval) clearInterval(this.deviceInterval);
-    if(this.chartInterval) clearInterval(this.chartInterval);
-  }
-
 
   isLoggedIn = () => {
     if (localStorage.getItem("id_token") === null) {

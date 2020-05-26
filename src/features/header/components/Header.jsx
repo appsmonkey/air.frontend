@@ -40,7 +40,7 @@ const Logo = styled.img`
 
 const Links = styled.div`
   display: none;
-  @media (min-width: 770px) {
+  @media (min-width: 949px) {
     display: block;
   }
 `;
@@ -50,7 +50,7 @@ const StyledLink = styled(NavLink)`
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom: 1rem;
-  @media (min-width: 770px) {
+  @media (min-width: 949px) {
     margin: 0 1rem;
   }
   &.active {
@@ -63,7 +63,7 @@ const ExternalLink = styled.a`
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom: 1rem;
-  @media (min-width: 770px) {
+  @media (min-width: 949px) {
     margin: 0 1rem;
   }
   &:visited{
@@ -81,7 +81,7 @@ const NavBtn = styled.div`
   cursor: pointer;
   text-transform: uppercase;
   margin-bottom: ${props => (props.marginbottom ? "1rem" : "0")};
-  @media (min-width: 770px) {
+  @media (min-width: 949px) {
     margin: 0 1rem;
   }
 `;
@@ -96,7 +96,7 @@ const AuthBtn = styled(Link)`
   cursor: pointer;
   text-transform: uppercase;
   margin-bottom: ${props => (props.marginbottom ? "1rem" : "0")};
-  @media (min-width: 770px) {
+  @media (min-width: 949px) {
     margin: 0 1rem;
   }
 `;
@@ -104,7 +104,7 @@ const AuthBtn = styled(Link)`
 const MenuIconWrapper = styled.div`
   margin: 0 1rem;
   cursor: pointer;
-  @media (min-width: 770px) {
+  @media (min-width: 949px) {
     display: none;
   }
 `;
@@ -120,7 +120,7 @@ const NavMobile = styled.nav`
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1rem;
   z-index: 1;
-  @media (min-width: 770px) {
+  @media (min-width: 949px) {
     display: none;
   }
 `;

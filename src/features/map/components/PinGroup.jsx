@@ -43,7 +43,8 @@ class PinGroups extends Component {
   calculateAverageValue = () => {
     const { cluster, superCluster } = this.props;
     let points = superCluster.getLeaves(cluster.id, Infinity, 0);
-    points = points.filter(point => get(point, 'properties.props.value'))
+    console.log(points);
+    points = points.filter(point => get(point, 'properties.props.value') !== null)
 
     if(points && points.length > 0){
       let sum = 0;
