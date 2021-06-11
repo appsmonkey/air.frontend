@@ -1,3 +1,5 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 <p align="center"><a href="https://air.cityos.io/login"><img src="public/images/cityos-air-logo.png" /></a></p>
 <br />
 <br />
